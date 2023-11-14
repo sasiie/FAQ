@@ -1,0 +1,33 @@
+html {
+  background: #f2f1f4;
+  color: #4f13aa;
+  display: flex;
+  justify-content: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 20px;
+  background-color: violet;
+  width: 500px;
+}
+
+.description {
+  width: 500px;
+  background-color: #4f13aa;
+  color: white;
+  display: none;
+}
+.title {
+  background-color: pink;
+  width: 500px;
+  font-weight: bold;
+}
+
+.title.active + .description {
+  display: block;
+}
+
+.description {
+  margin-bottom: 1rem;
+}
